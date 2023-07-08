@@ -5,7 +5,7 @@ const Logo = () => {
     <div className='text-2xl md:text-3xl font-bold text-themecolor flex gap-1'>
       <span>A</span>
       <span>|</span>
-      <span>B</span>
+      <span>C</span>
     </div>
   )
 }
