@@ -8,7 +8,7 @@ interface ListProps {
 
 const List : FC<ListProps>= ({children,className=''}) => {
   return (
-    <li className={cc(className,"relative before:content-['▹'] before:absolute before:left-0 before:text-themecolor pl-4")}>
+    <li className={cc("relative  before:text-lg before:content-['▹']  before:absolute before:left-0 before:text-themecolor pl-7")}>
       {children}
     </li>
   )

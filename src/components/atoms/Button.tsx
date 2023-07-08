@@ -1,24 +1,8 @@
-import cc from '@/util'
 import React, { FC, ReactNode } from 'react'
+import classNames from 'classnames'
 
 type baseSize = "sm" | "md" | "lg" 
 
-const padding: Record<baseSize, Array<number>> = {
-  sm: [5,2],
-  md: [8,3],
-  lg: [12,4],
-  
-}
-
-const fontsize : Record<baseSize, string|number> = {
-  sm: 'base',
-  md: 'lg',
-  lg: 'xl',
-}
-
-const gbc = (pd: baseSize, fs: baseSize) =>{
-  return `px-${padding[pd][0]} py-${padding[pd][1]}  text-${fontsize[fs]}`
-}
 
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
@@ -27,9 +11,18 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 const Button: FC<ButtonProps> = ({ className="", children, fontSize ="sm", padding ="sm"}) => {
+
   return (
-    <div className={cc('bg-themecolor group rounded-lg', className)}>
-      <button className={cc(' rounded-md bg-backgroundcolor transition-all duration-[250ms] hover:-translate-x-1 hover:-translate-y-1 text-themecolor border border-themecolor ',gbc(padding, fontSize))}>{children}</button>
+    <div className={classNames('bg-themecolor group rounded-lg', className)}>
+      <button className={classNames(' rounded-md bg-backgroundcolor transition-all duration-[250ms] hover:-translate-x-1 hover:-translate-y-1 text-themecolor border border-themecolor ', {
+      "px-5 py-2 sm:px-5 sm:py-2 lg:px-5  lg:py-2": padding === "sm",
+      "px-8 py-3 sm:px-10 sm:py-3 lg:px-12  lg:py-4": padding === "md",
+      "px-7 py-3 sm:px-10 sm:py-3 lg:px-12  lg:py-4": padding === "lg",
+    },{
+      "text-xs sm:text-sm ": fontSize === "sm",
+      "text-sm sm:text-base ": fontSize === "md",
+      "text-base sm:text-lg ": fontSize === "lg",
+    })}>{children}</button>
     </div>
   )
 }

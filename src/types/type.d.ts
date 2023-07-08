@@ -23,14 +23,18 @@ type Image = {
   desc : string
 }
 
-type highlightProject = {
+type project = {
   title: string;
   description: string;
   tags: Array<string>;
+  isHighlight: boolean;
   links: {
     github: string;
     demo: string;
   };
-  imagePreview : Image,
+  imagePreview : Image
+  
+  ,
   images : Array<Image>
 };
+

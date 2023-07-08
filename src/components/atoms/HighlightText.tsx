@@ -7,7 +7,7 @@ interface HighlightTextProps {
 
 const HighlightText :FC<HighlightTextProps> = ({children, className}) => {
   return (
-    <span className={`${className} text-themecolor`}>{children}</span>
+    <span className={`${className} text-themecolor font-fira`}>{children}</span>
   )
 }
 

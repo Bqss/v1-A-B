@@ -5,7 +5,7 @@ import {FiGithub, FiLinkedin, FiInstagram, FiTwitter, FiFacebook} from "react-ic
 
 const SocmedSide = () => {
   return (
-    <div className='fixed bottom-0 left-5 md:left-10 text-white'>
+    <div className='fixed hidden md:block bottom-0 left-5 md:left-10 text-white'>
       <ul className='flex flex-col gap-2 items-center after:content-[""] after:block after:w-[1px] after:h-40 after:bg-white after:mt-5'>
         {socmeds.map((socmed, index) => (
           <li key={index}>
