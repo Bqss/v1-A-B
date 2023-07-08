@@ -4,8 +4,6 @@ import { Component, useRef, MutableRefObject, forwardRef, useEffect, useState } 
 // @ts-ignore
 import { useWindowSize, useMediaQuery } from "@uidotdev/usehooks";
 import { ElementType, FC, ReactNode, memo, useContext, createContext, Dispatch, SetStateAction, Fragment } from 'react'
-import useClientBound from '@/hooks/useClientBound';
-import useClientPostition from '@/hooks/useClientBound';
 import { render } from 'react-dom';
 import classNames from 'classnames';
 import { NumberLiteralType } from 'typescript';

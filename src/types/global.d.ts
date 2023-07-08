@@ -1,0 +1,2 @@
+
+declare module "@uidotdev/usehooks"
