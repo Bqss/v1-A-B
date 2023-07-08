@@ -1,4 +1,4 @@
-'use client'
+// 'use client'
 import React from 'react'
 import { projects } from '@/data'
 import HighlightedProject from '../mollecules/HighlightedProject'

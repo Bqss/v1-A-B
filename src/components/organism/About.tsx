@@ -1,4 +1,4 @@
-'use client'
+
 import List from '../atoms/List'
 import Image from 'next/image'
 import Section from '../atoms/Section'

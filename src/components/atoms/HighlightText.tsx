@@ -5,13 +5,11 @@ interface HighlightTextProps {
   className?: String
 }
 
-const HighlightText :FC<HighlightTextProps> = ({children, className}) => {
+const HighlightText :FC<HighlightTextProps> = ({children, className=""}) => {
   return (
     <span className={`${className} text-themecolor font-fira`}>{children}</span>
   )
 }
 
-HighlightText.defaultProps = {
-  className: ''
-}
+
 export default  HighlightText

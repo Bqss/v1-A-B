@@ -1,4 +1,4 @@
-'use client'
+
 import Button from '../atoms/Button'
 import Heading from '../atoms/Heading'
 import Section from '../atoms/Section'
