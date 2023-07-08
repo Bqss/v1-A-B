@@ -1,6 +1,7 @@
 "use client"
 import cc from '@/util'
 import { Component, useRef, MutableRefObject, forwardRef, useEffect, useState } from "react"
+// @ts-ignore
 import { useWindowSize, useMediaQuery } from "@uidotdev/usehooks";
 import { ElementType, FC, ReactNode, memo, useContext, createContext, Dispatch, SetStateAction, Fragment } from 'react'
 import useClientBound from '@/hooks/useClientBound';
@@ -78,7 +79,7 @@ const Panel: FC<PanelProps> = ({ children, className = '', value }) => {
 
 const List: FC<ListProps> = ({ children, className = '' }) => {
   const { activeTab, setActiveTab } = useContext(TabsContext);
-  const listRef = useRef<HTMLElement>(null);
+  const listRef = useRef<HTMLUListElement>(null);
   const size = useWindowSize();
   const isbig = useMediaQuery("only screen and (min-width : 768px)");
   const [tabs, setTabs] = useState<Array<{width : number, height: number, top : number, left: number}>>([]);
