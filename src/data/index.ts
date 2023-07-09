@@ -33,7 +33,7 @@ export const myRecentWork: Array<work> = [
       "lorem ipsum dolor sit amet ndasku mumet ratau turu karo kowe mung ngomong ngene ae ",
       "lorem ipsum dolor sit amet ndasku mumet ratau turu karo kowe mung ngomong ngene ae ",
     ],
-    website: "https://www.xnxx.com",
+    website: "",
   },
   {
     title: "Freelance on PSHTerate",
