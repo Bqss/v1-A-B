@@ -3,14 +3,14 @@ import Contact from "@/components/organism/Contact";
 import Experience from "@/components/organism/Experience";
 import Home from "@/components/organism/Home";
 import Works from "@/components/organism/Works";
+import { Metadata } from "next";
 import { socmeds } from '@/data'
 import Link from 'next/link'
-import { motion } from 'framer-motion';
 
-
-
-
-
+export const metadata : Metadata = {
+  title : "Basofi.V1",
+  description : "Basofi's Portfolio",
+};
 
 const Page = () => {
 
