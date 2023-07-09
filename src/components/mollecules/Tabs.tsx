@@ -3,7 +3,7 @@
 import { useRef, MutableRefObject, forwardRef, useEffect, useState } from "react"
 import { useWindowSize, useMediaQuery } from "usehooks-ts";
 import { FC, ReactNode, memo, useContext, createContext, Dispatch, SetStateAction, Fragment } from 'react'
-
+import { motion } from 'framer-motion';
 import classNames from 'classnames';
 
 
@@ -71,9 +71,14 @@ const Panel: FC<PanelProps> = ({ children, className = '', value }) => {
   const { activeTab } = useContext(TabsContext);
   if (activeTab != value) return null;
   return (
-    <div className={classNames(className, 'h-full text-sm')}>
+    <motion.div className={classNames(className, 'h-full text-sm')}
+      initial={{opacity: 0}}
+      animate={{opacity: 1}}
+      exit={{opacity: 0}}
+      transition={{duration: 0.2, delay:0.3}}
+    >
       {children}
-    </div>
+    </motion.div>
   )
 }
 

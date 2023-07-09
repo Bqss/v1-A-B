@@ -5,9 +5,6 @@ import Link from 'next/link'
 import { work } from '@/types/type'
 import classNames from 'classnames'
 
-
-
-
 interface WorkProps {
   workData: work,
   className?: string

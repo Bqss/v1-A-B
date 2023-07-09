@@ -8,7 +8,7 @@ import Section from '../atoms/Section';
 const Experience = () => {
   const [activeTab, setActiveTab] = useState<number>(0);
   return (
-    <Section className="py-20 sm:py-56 " indent={3}>
+    <Section className="py-20 sm:py-56 " indent={3} isAnimate={true}>
       <Section.Title number={2}>Where i&apos;ve Worked</Section.Title>
       <Tabs activeTab={activeTab} setActiveTab={setActiveTab} className=" mt-10 mt:16   " >
         <Tabs.List>
@@ -20,7 +20,7 @@ const Experience = () => {
             )
           })}
         </Tabs.List>
-        <Tabs.Panels className="overflow-y-auto h-[60vh]  scrollbar_hidden text-lightestslate text-light">
+        <Tabs.Panels className="overflow-y-auto h-[50vh]  scrollbar_hidden text-lightestslate text-light">
           {myRecentWork.map((work, _i) => (
             <Tabs.Panel key={_i} value={_i}>
               <Work workData={work} />

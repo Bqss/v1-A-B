@@ -1,12 +1,11 @@
-
+"use client"
 import List from '../atoms/List'
-import Image from 'next/image'
 import Section from '../atoms/Section'
 import { mySkils } from '@/data'
 
 const About = () => {
   return (
-    <Section className="text-lg " indent={1}>
+    <Section className="text-lg md:py-56" indent={1} isAnimate={true}>
       <Section.Title number={1}>About Me</Section.Title>
       <div className='flex flex-col md:flex-row-reverse  gap-3 lg:gap-10'>
         <div className="relative w-8/12 max-w-[14rem] mx-auto sm:basis-4/12 group shrink-0 mt-10 sm:mt-16 ">

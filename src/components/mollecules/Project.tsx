@@ -1,13 +1,11 @@
 'use client'
 import { project } from '@/types/type'
-import cc from '@/util';
-import { Fira_Code } from 'next/font/google';
+import cc from "@/util"
 import Link from 'next/link';
 import React, { FC } from 'react'
 import {AiOutlineFolder} from "react-icons/ai";
 import { FiGithub,FiShare } from 'react-icons/fi';
 
-const firacode = Fira_Code({subsets : ['latin']});
 
 
 interface ProjectProps {
@@ -18,7 +16,7 @@ interface ProjectProps {
 const Project : FC<ProjectProps>= ({projectData}) => {
   const {title,description,tags,links} = projectData;
   return (
-    <div className='p-6 rounded-lg shadow-md shadow-navyshadow bg-[#2e194a]'>
+    <div className='p-6 rounded-lg shadow-md shadow-navyshadow bg-[#2e194a] transition-transform duration-300 hover:-translate-y-2 cursor-pointer'>
       <div className="flex justify-between items-center">
         <span><AiOutlineFolder className='w-10 h-10 text-themecolor'/></span>
         <div className='space-x-4 flex'>
