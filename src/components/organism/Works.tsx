@@ -24,7 +24,7 @@ const Works = () => {
             visible: { opacity: 1, y: 0 },
             hidden: { opacity: 0, y: 50 }
           }} number={3} >Somethings I&apos;ve Built</Section.Title>
-        <ul className="flex flex-col mt-12  sm:mt-36  gap-10 sm:gap-20">
+        <ul className="flex flex-col mt-12  sm:mt-36  gap-10 sm:gap-40">
           {projects.filter(project => project.isHighlight).map((project, _i) => (
             <HighlightedProject
               isReverse={_i % 2 == 0}

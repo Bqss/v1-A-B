@@ -17,7 +17,7 @@ const Work: FC<WorkProps> = ({ workData, className }) => {
       <div className={classNames('mt-1 sm:mt-3 font-fira text-slate text-xs sm:text-sm')}>
         <time>{workData.date.start}</time>
         <span> - </span>
-        <time>{workData.date.start || "Present"}</time>
+        <time>{workData.date.end || "Present"}</time>
       </div>
       <ul className='mt-5 space-y-3 text-lightestslate text-sm'>
         {workData.description.map((desc, i) => <List key={i}>{desc}</List>)}
