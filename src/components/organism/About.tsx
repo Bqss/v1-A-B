@@ -17,9 +17,12 @@ const About = () => {
         </div>
         <div className="flex flex-col gap-3 mt-10 text-sm sm:text-base  text-lightestslate">
           <p>Hello!  My name is Ahmad Basofi and I enjoy creating things that live on the internet. My interest in web development started on 2022 , when I reached my 2nd semester as Informatics College Student. </p>
-          <p>Fast-forward to today, and I’ve had the privilege of working at an advertising agency, a start-up, a huge corporation, and a student-led design studio. My main focus these days is building accessible, inclusive products and digital experiences at Upstatement for a variety of clients.</p>
-          <p>I also recently launched a course that covers everything you need to build a web app with the Spotify API using Node & React.</p>
-          <p>Here are a few technologies I’ve been working with recently:</p>
+          <p>Fast-forward to today, and I’ve part of MACROMA BUDDIES (my college friend&apos;s  startup ) that engaged on game , tourism , and ornamental fish , and join some competition about startup and proggramming event </p>
+          <p>I&apos;ve also doin some freelance on my university as practicum assistance and also doin freelance on PSHT Terate Blitas as full stack developer </p>
+          <p>As college i&apos;m also active on one Organization that was HMPSTI , and now i&apos;m as Head of interest and talent Division. My hobby is playing game and some sports like football , volley and table tennis  </p>
+
+          <p>And there is some technologies that i&apos;ve learn as a WEB Developer :  </p>
+
           <ul className="grid grid-cols-2 gap-y-2 relative mt-5 sm:mt-3 text-lightestslate text-xs sm:text-sm ">
             {mySkils.map((skill, _i) => <List key={_i}>{skill}</List>)}
           </ul>
